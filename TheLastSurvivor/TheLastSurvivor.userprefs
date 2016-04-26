@@ -1,21 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Skill/SkillList.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MainMenu/LoadRoom.cs">
     <Files>
       <File FileName="Assets/Test2.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/Hero.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Game/GameJudgement.cs" Line="12" Column="13" />
-      <File FileName="Assets/Script/Game/XUnit.cs" Line="87" Column="58" />
+      <File FileName="Assets/Script/Game/GameJudgement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Game/XUnit.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/SmallTools/RankList.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Game/GeneralData.cs" Line="60" Column="40" />
+      <File FileName="Assets/Script/Game/GeneralData.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/Controller.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/PlayerSpawn.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/PlayerInput.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Game/Skill.cs" Line="47" Column="25" />
-      <File FileName="Assets/Script/Skill/SkillList.cs" Line="125" Column="75" />
+      <File FileName="Assets/Script/Game/Skill.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Skill/SkillList.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/SmallTools/Reward.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/SmallTools/NameManage.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Skill/ButtonBase.cs" Line="6" Column="5" />
+      <File FileName="Assets/Script/Skill/ButtonBase.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/MainMenu/LoadRoom.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

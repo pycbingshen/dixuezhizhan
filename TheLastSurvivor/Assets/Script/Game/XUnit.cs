@@ -59,49 +59,50 @@ public class XUnit : MonoBehaviour
             Debug.Log(attacker.transform.position.ToString("f8") + "  =weizhi=  " + gameObject.transform.position.ToString("f8"));
             GameObject.Find("UI Root/RankList").GetComponent<RankList>().Kill(int.Parse(attacker.name), int.Parse(gameObject.name));
 
-            if(GeneralData.gameModeNum == 1)
-            {
-                RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
-                if(GeneralData.teamModeNum == 1)
-                {
-                    if(list.num[list.playerIdToRankID[int.Parse(attacker.name)]] >= GeneralData.gameOption)
-                    {
-                        GameJudgement.GameEnd();
-                    }
-                }
-                else
-                {
-                    if(list.num[1] >= GeneralData.gameOption || list.num[list.team2num] >= GeneralData.gameOption)
-                    {
-                        GameJudgement.GameEnd();
-                    }
-                }
-            }
-
-            if(GeneralData.gameModeNum == 2)
-            {
-                RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
-                if(list.num[list.playerIdToRankID[int.Parse(gameObject.name)]] == 0)
-                {
-                    CanRevive = false;
-                    if(GeneralData.teamModeNum == 1)
-                    {
-                        GeneralData.AlivePlayerNum[1] --;
-                        if(GeneralData.AlivePlayerNum[1] <= 1)
-                        {
-                            GameJudgement.GameEnd();
-                        }
-                    }
-                    else
-                    {
-                        GeneralData.AlivePlayerNum[TeamID]--;
-                        if(GeneralData.AlivePlayerNum[TeamID] <= 1)
-                        {
-                            GameJudgement.GameEnd();
-                        }
-                    }
-                }
-            }
+            GameJudgement.DealWith();
+//            if(GeneralData.gameModeNum == 1)
+//            {
+//                RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
+//                if(GeneralData.teamModeNum == 1)
+//                {
+//                    if(list.num[list.playerIdToRankID[int.Parse(attacker.name)]] >= GeneralData.gameOption)
+//                    {
+//                        GameJudgement.GameEnd();
+//                    }
+//                }
+//                else
+//                {
+//                    if(list.num[1] >= GeneralData.gameOption || list.num[list.team2num] >= GeneralData.gameOption)
+//                    {
+//                        GameJudgement.GameEnd();
+//                    }
+//                }
+//            }
+//
+//            if(GeneralData.gameModeNum == 2)
+//            {
+//                RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
+//                if(list.num[list.playerIdToRankID[int.Parse(gameObject.name)]] == 0)
+//                {
+//                    CanRevive = false;
+//                    if(GeneralData.teamModeNum == 1)
+//                    {
+//                        GeneralData.AlivePlayerNum[1] --;
+//                        if(GeneralData.AlivePlayerNum[1] <= 1)
+//                        {
+//                            GameJudgement.GameEnd();
+//                        }
+//                    }
+//                    else
+//                    {
+//                        GeneralData.AlivePlayerNum[TeamID]--;
+//                        if(GeneralData.AlivePlayerNum[TeamID] <= 1)
+//                        {
+//                            GameJudgement.GameEnd();
+//                        }
+//                    }
+//                }
+//            }
             attacker.GetComponent<XUnit>().GetExp(_expWhenIsDie);
             Dying();
         }

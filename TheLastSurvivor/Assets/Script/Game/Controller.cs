@@ -261,23 +261,27 @@ public class Controller: MonoBehaviour
             if(go != null)
             {
                 Hero hero = go.GetComponent<Hero>();
+
                 RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
-                if(GeneralData.gameModeNum == 2 && list.num[list.playerIdToRankID[gameMess.player]] != 0)
-                {
-                    if(GeneralData.teamModeNum == 1)
-                    {
-                        GeneralData.AlivePlayerNum[1] --;
-                        if(GeneralData.AlivePlayerNum[1] <= 1)
-                            GameJudgement.GameEnd();
-                    }
-                    else
-                    {
-                        int teamID = GeneralData.TeamId[gameMess.player];
-                        GeneralData.AlivePlayerNum[teamID]--;
-                        if(GeneralData.AlivePlayerNum[teamID] <= 1)
-                            GameJudgement.GameEnd();
-                    }
-                }
+                int listID = list.playerIdToRankID[gameMess.player];
+                list.Refresh( listID , -list.num[listID] );
+                GameJudgement.DealWith();
+//                if(GeneralData.gameModeNum == 2 && list.num[list.playerIdToRankID[gameMess.player]] != 0)
+//                {
+//                    if(GeneralData.teamModeNum == 1)
+//                    {
+//                        GeneralData.AlivePlayerNum[1] --;
+//                        if(GeneralData.AlivePlayerNum[1] <= 1)
+//                            GameJudgement.GameEnd(true);
+//                    }
+//                    else
+//                    {
+//                        int teamID = GeneralData.TeamId[gameMess.player];
+//                        GeneralData.AlivePlayerNum[teamID]--;
+//                        if(GeneralData.AlivePlayerNum[teamID] <= 1)
+//                            GameJudgement.GameEnd(true);
+//                    }
+//                }
                 Destroy(hero.HP.gameObject);
                 Destroy(hero.NameLabel);
                 Destroy(go);
