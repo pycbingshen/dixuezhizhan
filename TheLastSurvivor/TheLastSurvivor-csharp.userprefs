@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/SmallTools/Reward.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MainMenu/LoadRoom.cs">
     <Files>
       <File FileName="Assets/Script/SmallTools/Reward.cs" Line="15" Column="8" />
       <File FileName="Assets/Script/Game/XGame.cs" Line="67" Column="30" />
+      <File FileName="Assets/Script/MainMenu/LoadRoom.cs" Line="14" Column="38" />
+      <File FileName="Assets/Script/Game/Controller.cs" Line="52" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
