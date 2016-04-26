@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: c3873b3ce1068944f9bcae6fdf3fc49d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: humanthief
+    100004: humanthief 1
+    100006: humanthief_bone_0
+    100008: humanthief_bone_1
+    100010: humanthief_bone_10
+    100012: humanthief_bone_11
+    100014: humanthief_bone_12
+    100016: humanthief_bone_13
+    100018: humanthief_bone_14
+    100020: humanthief_bone_15
+    100022: humanthief_bone_16
+    100024: humanthief_bone_17
+    100026: humanthief_bone_18
+    100028: humanthief_bone_19
+    100030: humanthief_bone_2
+    100032: humanthief_bone_20
+    100034: humanthief_bone_21
+    100036: humanthief_bone_22
+    100038: humanthief_bone_23
+    100040: humanthief_bone_24
+    100042: humanthief_bone_25
+    100044: humanthief_bone_26
+    100046: humanthief_bone_27
+    100048: humanthief_bone_28
+    100050: humanthief_bone_29
+    100052: humanthief_bone_3
+    100054: humanthief_bone_30
+    100056: humanthief_bone_31
+    100058: humanthief_bone_32
+    100060: humanthief_bone_33
+    100062: humanthief_bone_34
+    100064: humanthief_bone_4
+    100066: humanthief_bone_5
+    100068: humanthief_bone_6
+    100070: humanthief_bone_7
+    100072: humanthief_bone_8
+    100074: humanthief_bone_9
+    400000: //RootNode
+    400002: humanthief
+    400004: humanthief 1
+    400006: humanthief_bone_0
+    400008: humanthief_bone_1
+    400010: humanthief_bone_10
+    400012: humanthief_bone_11
+    400014: humanthief_bone_12
+    400016: humanthief_bone_13
+    400018: humanthief_bone_14
+    400020: humanthief_bone_15
+    400022: humanthief_bone_16
+    400024: humanthief_bone_17
+    400026: humanthief_bone_18
+    400028: humanthief_bone_19
+    400030: humanthief_bone_2
+    400032: humanthief_bone_20
+    400034: humanthief_bone_21
+    400036: humanthief_bone_22
+    400038: humanthief_bone_23
+    400040: humanthief_bone_24
+    400042: humanthief_bone_25
+    400044: humanthief_bone_26
+    400046: humanthief_bone_27
+    400048: humanthief_bone_28
+    400050: humanthief_bone_29
+    400052: humanthief_bone_3
+    400054: humanthief_bone_30
+    400056: humanthief_bone_31
+    400058: humanthief_bone_32
+    400060: humanthief_bone_33
+    400062: humanthief_bone_34
+    400064: humanthief_bone_4
+    400066: humanthief_bone_5
+    400068: humanthief_bone_6
+    400070: humanthief_bone_7
+    400072: humanthief_bone_8
+    400074: humanthief_bone_9
+    4300000: humanthief
+    7400000: Walk [0]
+    7400002: Run [1]
+    7400004: Attack1H [2]
+    7400006: Stand [3]
+    7400008: Attack1H [4]
+    7400010: Death [7]
+    9500000: //RootNode
+    13700000: humanthief
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: f9f23b3aab2fa4c43b964c74e816c623
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: ladyalexstrasa2
+    100002: ladyalexstrasa2 1
+    100004: ladyalexstrasa2_bone_0
+    100006: ladyalexstrasa2_bone_1
+    100008: ladyalexstrasa2_bone_10
+    100010: ladyalexstrasa2_bone_11
+    100012: ladyalexstrasa2_bone_12
+    100014: ladyalexstrasa2_bone_13
+    100016: ladyalexstrasa2_bone_130
+    100018: ladyalexstrasa2_bone_131
+    100020: ladyalexstrasa2_bone_14
+    100022: ladyalexstrasa2_bone_15
+    100024: ladyalexstrasa2_bone_16
+    100026: ladyalexstrasa2_bone_17
+    100028: ladyalexstrasa2_bone_18
+    100030: ladyalexstrasa2_bone_19
+    100032: ladyalexstrasa2_bone_2
+    100034: ladyalexstrasa2_bone_20
+    100036: ladyalexstrasa2_bone_21
+    100038: ladyalexstrasa2_bone_22
+    100040: ladyalexstrasa2_bone_23
+    100042: ladyalexstrasa2_bone_24
+    100044: ladyalexstrasa2_bone_25
+    100046: ladyalexstrasa2_bone_26
+    100048: ladyalexstrasa2_bone_27
+    100050: ladyalexstrasa2_bone_28
+    100052: ladyalexstrasa2_bone_29
+    100054: ladyalexstrasa2_bone_3
+    100056: ladyalexstrasa2_bone_30
+    100058: ladyalexstrasa2_bone_31
+    100060: ladyalexstrasa2_bone_32
+    100062: ladyalexstrasa2_bone_33
+    100064: ladyalexstrasa2_bone_34
+    100066: ladyalexstrasa2_bone_35
+    100068: ladyalexstrasa2_bone_36
+    100070: ladyalexstrasa2_bone_37
+    100072: ladyalexstrasa2_bone_38
+    100074: ladyalexstrasa2_bone_39
+    100076: ladyalexstrasa2_bone_4
+    100078: ladyalexstrasa2_bone_40
+    100080: ladyalexstrasa2_bone_41
+    100082: ladyalexstrasa2_bone_42
+    100084: ladyalexstrasa2_bone_43
+    100086: ladyalexstrasa2_bone_44
+    100088: ladyalexstrasa2_bone_45
+    100090: ladyalexstrasa2_bone_46
+    100092: ladyalexstrasa2_bone_47
+    100094: ladyalexstrasa2_bone_48
+    100096: ladyalexstrasa2_bone_49
+    100098: ladyalexstrasa2_bone_5
+    100100: ladyalexstrasa2_bone_50
+    100102: ladyalexstrasa2_bone_51
+    100104: ladyalexstrasa2_bone_52
+    100106: ladyalexstrasa2_bone_53
+    100108: ladyalexstrasa2_bone_54
+    100110: ladyalexstrasa2_bone_55
+    100112: ladyalexstrasa2_bone_56
+    100114: ladyalexstrasa2_bone_57
+    100116: ladyalexstrasa2_bone_58
+    100118: ladyalexstrasa2_bone_59
+    100120: ladyalexstrasa2_bone_6
+    100122: ladyalexstrasa2_bone_60
+    100124: ladyalexstrasa2_bone_61
+    100126: ladyalexstrasa2_bone_62
+    100128: ladyalexstrasa2_bone_63
+    100130: ladyalexstrasa2_bone_64
+    100132: ladyalexstrasa2_bone_65
+    100134: ladyalexstrasa2_bone_66
+    100136: ladyalexstrasa2_bone_67
+    100138: ladyalexstrasa2_bone_68
+    100140: ladyalexstrasa2_bone_69
+    100142: ladyalexstrasa2_bone_7
+    100144: ladyalexstrasa2_bone_70
+    100146: ladyalexstrasa2_bone_71
+    100148: ladyalexstrasa2_bone_8
+    100150: ladyalexstrasa2_bone_9
+    100152: //RootNode
+    400000: ladyalexstrasa2
+    400002: ladyalexstrasa2 1
+    400004: ladyalexstrasa2_bone_0
+    400006: ladyalexstrasa2_bone_1
+    400008: ladyalexstrasa2_bone_10
+    400010: ladyalexstrasa2_bone_11
+    400012: ladyalexstrasa2_bone_12
+    400014: ladyalexstrasa2_bone_13
+    400016: ladyalexstrasa2_bone_130
+    400018: ladyalexstrasa2_bone_131
+    400020: ladyalexstrasa2_bone_14
+    400022: ladyalexstrasa2_bone_15
+    400024: ladyalexstrasa2_bone_16
+    400026: ladyalexstrasa2_bone_17
+    400028: ladyalexstrasa2_bone_18
+    400030: ladyalexstrasa2_bone_19
+    400032: ladyalexstrasa2_bone_2
+    400034: ladyalexstrasa2_bone_20
+    400036: ladyalexstrasa2_bone_21
+    400038: ladyalexstrasa2_bone_22
+    400040: ladyalexstrasa2_bone_23
+    400042: ladyalexstrasa2_bone_24
+    400044: ladyalexstrasa2_bone_25
+    400046: ladyalexstrasa2_bone_26
+    400048: ladyalexstrasa2_bone_27
+    400050: ladyalexstrasa2_bone_28
+    400052: ladyalexstrasa2_bone_29
+    400054: ladyalexstrasa2_bone_3
+    400056: ladyalexstrasa2_bone_30
+    400058: ladyalexstrasa2_bone_31
+    400060: ladyalexstrasa2_bone_32
+    400062: ladyalexstrasa2_bone_33
+    400064: ladyalexstrasa2_bone_34
+    400066: ladyalexstrasa2_bone_35
+    400068: ladyalexstrasa2_bone_36
+    400070: ladyalexstrasa2_bone_37
+    400072: ladyalexstrasa2_bone_38
+    400074: ladyalexstrasa2_bone_39
+    400076: ladyalexstrasa2_bone_4
+    400078: ladyalexstrasa2_bone_40
+    400080: ladyalexstrasa2_bone_41
+    400082: ladyalexstrasa2_bone_42
+    400084: ladyalexstrasa2_bone_43
+    400086: ladyalexstrasa2_bone_44
+    400088: ladyalexstrasa2_bone_45
+    400090: ladyalexstrasa2_bone_46
+    400092: ladyalexstrasa2_bone_47
+    400094: ladyalexstrasa2_bone_48
+    400096: ladyalexstrasa2_bone_49
+    400098: ladyalexstrasa2_bone_5
+    400100: ladyalexstrasa2_bone_50
+    400102: ladyalexstrasa2_bone_51
+    400104: ladyalexstrasa2_bone_52
+    400106: ladyalexstrasa2_bone_53
+    400108: ladyalexstrasa2_bone_54
+    400110: ladyalexstrasa2_bone_55
+    400112: ladyalexstrasa2_bone_56
+    400114: ladyalexstrasa2_bone_57
+    400116: ladyalexstrasa2_bone_58
+    400118: ladyalexstrasa2_bone_59
+    400120: ladyalexstrasa2_bone_6
+    400122: ladyalexstrasa2_bone_60
+    400124: ladyalexstrasa2_bone_61
+    400126: ladyalexstrasa2_bone_62
+    400128: ladyalexstrasa2_bone_63
+    400130: ladyalexstrasa2_bone_64
+    400132: ladyalexstrasa2_bone_65
+    400134: ladyalexstrasa2_bone_66
+    400136: ladyalexstrasa2_bone_67
+    400138: ladyalexstrasa2_bone_68
+    400140: ladyalexstrasa2_bone_69
+    400142: ladyalexstrasa2_bone_7
+    400144: ladyalexstrasa2_bone_70
+    400146: ladyalexstrasa2_bone_71
+    400148: ladyalexstrasa2_bone_8
+    400150: ladyalexstrasa2_bone_9
+    400152: //RootNode
+    4300000: ladyalexstrasa2
+    7400000: AttackBow [8]
+    7400002: AttackRifle [10]
+    7400004: LoadBow [14]
+    7400006: Run [18]
+    7400008: Death [51]
+    7400010: SpecialUnarmed [134]
+    7400012: Stand [141]
+    9500000: //RootNode
+    13700000: ladyalexstrasa2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

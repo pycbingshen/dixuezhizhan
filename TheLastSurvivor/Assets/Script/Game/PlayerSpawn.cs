@@ -20,6 +20,7 @@ public class PlayerSpawn: MonoBehaviour {
             if( i >= transform.childCount)
                 break;
         }
+        spawnPos.y = 10;
 
         Transform HPParent = GameObject.Find("UI Root/HP/PlayerHP").transform;
         Transform NameParent = GameObject.Find("UI Root/Name").transform;

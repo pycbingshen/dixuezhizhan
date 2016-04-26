@@ -65,8 +65,9 @@ public class Hero : XUnit
 
         for(int i = 0 ; i < 4 ; i ++)
         {
-            color.a -= 0.15f;
-            m_Renderers[0].material.SetColor("_Color", color);
+            color.a -= 0.15f; 
+            for(int j = 0; j < m_Renderers.Length; j++)
+                m_Renderers[j].material.SetColor("_Color", color);
             for(int j = 0 ; j < 5 ; j++)
                 yield return new WaitForFixedUpdate();
         }
@@ -75,7 +76,8 @@ public class Hero : XUnit
         if (TeamID != GeneralData.TeamId[GeneralData.myID])
         {
             color.a = 0;
-            m_Renderers[0].material.color = color;
+            for (int j = 0; j < m_Renderers.Length; j++)
+                m_Renderers[j].material.SetColor("_Color", color);
             HP.gameObject.SetActive(false);
             GameObject.Find("UI Root/Name/" + gameObject.name).SetActive(false);
         }
@@ -87,8 +89,9 @@ public class Hero : XUnit
         Visible = true;
         _moveSpeed = 8f;
         color.a = 1;
-        m_Renderers [0].material.color = color;
-        if(HP != null)
+        for (int j = 0; j < m_Renderers.Length; j++)
+            m_Renderers[j].material.SetColor("_Color", color);
+        if (HP != null)
             HP.gameObject.SetActive(true);
         Transform ts = GameObject.Find("UI Root/Name").transform.Find(gameObject.name);
         if(ts != null)

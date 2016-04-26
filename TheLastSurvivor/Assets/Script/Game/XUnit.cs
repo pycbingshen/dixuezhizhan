@@ -55,6 +55,8 @@ public class XUnit : MonoBehaviour
         //HP.gameObject.GetComponent<HPFollow>().AppearHurtNum(valueOfHurt);
         if (_currHP <= 0)
         {
+            Debug.Log("error ? : " + GeneralData.PlayerName[int.Parse(attacker.name)] + " kill " + GeneralData.PlayerName[int.Parse(gameObject.name)]);
+            Debug.Log(attacker.transform.position.ToString("f8") + "  =weizhi=  " + gameObject.transform.position.ToString("f8"));
             GameObject.Find("UI Root/RankList").GetComponent<RankList>().Kill(int.Parse(attacker.name), int.Parse(gameObject.name));
 
             if(GeneralData.gameModeNum == 1)
