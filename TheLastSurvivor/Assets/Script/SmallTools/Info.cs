@@ -68,9 +68,9 @@ public class Info : MonoBehaviour {
         if (conKillNum[killId] == 3) qInfo[rearPlus()] = info + " ，完成四杀";
         if (conKillNum[killId] == 4) qInfo[rearPlus()] = info + " ，完成五杀";
 
-        if (killNum[killId] == 6) qInfo[rearPlus()] = killId + " 已经无人能挡！";
-        if (killNum[killId] == 7) qInfo[rearPlus()] = killId + " 已经如同神一般！";
-        if (killNum[killId] == 8) qInfo[rearPlus()] = killId + " 已经超神了！";
+        if (killNum[killId] == 6) qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经无人能挡！";
+        if (killNum[killId] == 7) qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经如同神一般！";
+        if (killNum[killId] == 8) qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经超神了！";
     }
 
     int rearPlus(){
