@@ -17,6 +17,12 @@ namespace client
             m_lastframe = -1;
         }
 
+        public void init()
+        {
+            m_head = m_tail = 0;
+            m_lastframe = -1;
+        }
+
 		public bool empty()
         {
 			if(m_head == m_tail) return true;
