@@ -33,6 +33,9 @@ public class Skill : MonoBehaviour
         Vector3 playerPos = userGo.transform.position;
         userGo.GetComponent<Hero>().SetVisible();
 
+        if (userGo.GetComponent<Hero>()._isDead)
+            return;
+
         if (Controller.CurrentFrameNum - GeneralData.SkillLastUseFrame [int.Parse(userGo.name), (int)skillType] < 50)
             return;
 
