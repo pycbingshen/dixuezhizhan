@@ -6,20 +6,20 @@ using System;
 
 public static class GeneralData
 {
-    static public int myID = 1;
-    static public int PlayerNum = 2;
-    static public int charaID = 0;
+    static public int myID;
+    static public int PlayerNum;
+    static public int charaID;
     static public int[] randSeed = new int[500];
     static public Vector3[] SpawnPos = new Vector3[16];
     static public int[] skill = new int[5];
     static public float[] skillCD = new float[5];
-    static public bool choosed = false;
+    static public bool choosed;
     static public int SkillNum;
     static public int[] AlivePlayerNum = new int[3];
     static public int[,] SkillLastUseFrame = new int[10,12];
 
     static public string myName = null;
-    static public int myTeamId = 0;
+    static public int myTeamId;
     static public string[] PlayerName =new string[9];
     //static public int[] playerId =new int[8];
     static public int[] TeamId =new int[9];
@@ -55,6 +55,7 @@ public static class GeneralData
 
     static public void XStart()
     {
+        choosed = false;
         for (int i = 1; i <= 8; i++)
             for (int j = 0; j <= 11; j++)
                 SkillLastUseFrame [i,j] = -50;

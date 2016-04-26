@@ -13,7 +13,7 @@ public class Controller: MonoBehaviour
 {
     
     [HideInInspector][System.NonSerialized] public Skill m_skill;
-    static public int CurrentFrameNum = 0;
+    static public int CurrentFrameNum;
     public int[] head = new int[500];
     public int p,top;
    
