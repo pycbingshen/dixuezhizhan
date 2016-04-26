@@ -18,10 +18,16 @@ public class LoginPanel : MonoBehaviour {
     }
 
     void Start(){
-        program.StartConnect();
-        Debug.Log("connect");
-
         block.gameObject.SetActive(false);
+        if (GeneralData.myName == null)
+        {
+            program.StartConnect();
+            Debug.Log("connect");
+        }
+        else {
+            hallPanel.OpenHall();
+            gameObject.SetActive(false);
+        }
     }
 
     public void Login(){
