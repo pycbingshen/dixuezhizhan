@@ -1,0 +1,105 @@
+fileFormatVersion: 2
+guid: a93b94a5ae36640c78f01a0ac72223be
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: levelup
+    100004: levelup 1
+    100006: levelup_bone_0
+    100008: levelup_bone_1
+    100010: levelup_bone_10
+    100012: levelup_bone_11
+    100014: levelup_bone_12
+    100016: levelup_bone_13
+    100018: levelup_bone_14
+    100020: levelup_bone_15
+    100022: levelup_bone_16
+    100024: levelup_bone_17
+    100026: levelup_bone_2
+    100028: levelup_bone_3
+    100030: levelup_bone_4
+    100032: levelup_bone_5
+    100034: levelup_bone_6
+    100036: levelup_bone_7
+    100038: levelup_bone_8
+    100040: levelup_bone_9
+    400000: //RootNode
+    400002: levelup
+    400004: levelup 1
+    400006: levelup_bone_0
+    400008: levelup_bone_1
+    400010: levelup_bone_10
+    400012: levelup_bone_11
+    400014: levelup_bone_12
+    400016: levelup_bone_13
+    400018: levelup_bone_14
+    400020: levelup_bone_15
+    400022: levelup_bone_16
+    400024: levelup_bone_17
+    400026: levelup_bone_2
+    400028: levelup_bone_3
+    400030: levelup_bone_4
+    400032: levelup_bone_5
+    400034: levelup_bone_6
+    400036: levelup_bone_7
+    400038: levelup_bone_8
+    400040: levelup_bone_9
+    4300000: levelup
+    7400000: Stand [0]
+    9500000: //RootNode
+    13700000: levelup
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

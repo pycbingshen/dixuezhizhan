@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<role>
+
+	<messages
+		id = "-1"
+		explanation = "说明说明说明"
+    skill1s = "普通攻击"
+		skill1icon = "0_1"
+    skill2s = "手里剑"
+    skill2icon = "1_yueguangsuipian"
+    skill3s = "无敌"
+    skill3icon = "0_2"
+    skill4s = "闪避"
+    skill4icon = "1_tifeilianji"
+    >
+	</messages>
+
+  <messages
+		id = "0"
+		explanation = "说明说明说明"
+    skill1s = "隐身"
+    skill1icon = "4_tiantangshenpan"
+    skill2s = "雷霆"
+    skill2icon = "4_liansuoshandian"
+    >
+  </messages>
+
+  <messages
+		id = "1"
+		explanation = "说明说明说明"
+    skill1s = "闪现"
+    skill1icon = "3_taotuo"
+    skill2s = "范围禁锢"
+    skill2icon = "2_kunbangsheji"
+    >
+  </messages>
+
+  <messages
+		id = "2"
+		explanation = "说明说明说明"
+    skill1s = "火球"
+    skill1icon = "309"
+    skill2s = "雷霆"
+    skill2icon = "4_liansuoshandian"
+    >
+  </messages>
+
+  <messages
+		id = "3"
+		explanation = "说明说明说明"
+    skill1s = "远程攻击"
+    skill1icon = "2_jianshugeming"
+    skill2s = "穿心箭"
+    skill2icon = "2_mofajianshi"
+    >
+  </messages>
+  
+</role>

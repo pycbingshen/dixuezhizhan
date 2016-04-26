@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skill>
+
+	<messages
+		id = "0"
+		name = "pugong"
+		icon_name = "0_1"
+		but_type = "0"
+		ind_type = "2"
+		CD = "2">
+	</messages>
+	
+	<messages
+		id = "1"
+		name = "feibiao"
+		icon_name = "1_yueguangsuipian"
+		but_type = "1"
+		ind_type = "1"
+		CD = "1.5">
+	</messages>
+	
+	<messages
+		id = "2"
+		name = "wudi"
+		icon_name = "0_2"
+		but_type = "0"
+		ind_type = "0"
+		CD = "6">
+	</messages>
+	
+	<messages
+		id = "3"
+		name = "shanxian"
+		icon_name = "3_taotuo"
+		but_type = "0"
+		ind_type = "0"
+		CD = "10">
+	</messages>
+	
+	<messages
+		id = "4"
+		name = "leiting"
+		icon_name = "4_liansuoshandian"
+		but_type = "0"
+		ind_type = "0"
+		CD = "10">
+	</messages>
+	
+	<messages
+		id = "5"
+		name = "yinshen"
+		icon_name = "4_tiantangshenpan"
+		but_type = "0"
+		ind_type = "0"
+		CD = "15">
+	</messages>
+	
+	<messages
+		id = "6"
+		name = "huoqiu"
+		icon_name = "309"
+		but_type = "1"
+		ind_type = "0"
+		CD = "10">
+	</messages>
+	
+	<messages
+		id = "7"
+		name = "leidian"
+		icon_name = "2_kunbangsheji"
+		but_type = "0"
+		ind_type = "0"
+		CD = "10">
+	</messages>
+	
+	<messages
+		id = "8"
+		name = "chuanxinjian"
+		icon_name = "2_mofajianshi"
+		but_type = "1"
+		ind_type = "1"
+		CD = "20">
+	</messages>
+	
+</skill>

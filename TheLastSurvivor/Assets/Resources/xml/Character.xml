@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<character>
+
+	<messages
+		id = "0"
+		attackType = "1"
+		skill_num = "5"
+		skill1_id = "1"
+		skill2_id = "0"
+		skill3_id = "2"
+		skill4_id = "5"
+		skill5_id = "4">
+	</messages>
+	
+	<messages
+		id = "1"
+		attackType = "1"
+		skill_num = "5"
+		skill1_id = "1"
+		skill2_id = "0"
+		skill3_id = "2"
+		skill4_id = "3"
+		skill5_id = "7">
+	</messages>
+	
+	<messages
+		id = "2"
+		attackType = "1"
+		skill_num = "5"
+		skill1_id = "1"
+		skill2_id = "0"
+		skill3_id = "2"
+		skill4_id = "6"
+		skill5_id = "4">
+	</messages>
+	
+	<messages
+		id = "3"
+		attackType = "1"
+		skill_num = "4"
+		skill1_id = "1"
+		skill2_id = "0"
+		skill3_id = "2"
+		skill4_id = "8">
+	</messages>
+	
+</character>

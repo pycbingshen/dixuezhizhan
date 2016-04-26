@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: 5decf89b9dd7b4e278af9ebb0d030fbc
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: turtle
+    100002: turtle 1
+    100004: turtle_bone_0
+    100006: turtle_bone_1
+    100008: turtle_bone_10
+    100010: turtle_bone_11
+    100012: turtle_bone_12
+    100014: turtle_bone_13
+    100016: turtle_bone_14
+    100018: turtle_bone_15
+    100020: turtle_bone_16
+    100022: turtle_bone_17
+    100024: turtle_bone_18
+    100026: turtle_bone_19
+    100028: turtle_bone_2
+    100030: turtle_bone_20
+    100032: turtle_bone_21
+    100034: turtle_bone_22
+    100036: turtle_bone_23
+    100038: turtle_bone_24
+    100040: turtle_bone_3
+    100042: turtle_bone_4
+    100044: turtle_bone_48
+    100046: turtle_bone_5
+    100048: turtle_bone_6
+    100050: turtle_bone_7
+    100052: turtle_bone_8
+    100054: turtle_bone_9
+    100056: //RootNode
+    400000: turtle
+    400002: turtle 1
+    400004: turtle_bone_0
+    400006: turtle_bone_1
+    400008: turtle_bone_10
+    400010: turtle_bone_11
+    400012: turtle_bone_12
+    400014: turtle_bone_13
+    400016: turtle_bone_14
+    400018: turtle_bone_15
+    400020: turtle_bone_16
+    400022: turtle_bone_17
+    400024: turtle_bone_18
+    400026: turtle_bone_19
+    400028: turtle_bone_2
+    400030: turtle_bone_20
+    400032: turtle_bone_21
+    400034: turtle_bone_22
+    400036: turtle_bone_23
+    400038: turtle_bone_24
+    400040: turtle_bone_3
+    400042: turtle_bone_4
+    400044: turtle_bone_48
+    400046: turtle_bone_5
+    400048: turtle_bone_6
+    400050: turtle_bone_7
+    400052: turtle_bone_8
+    400054: turtle_bone_9
+    400056: //RootNode
+    4300000: turtle
+    7400000: Stand [1]
+    7400002: Walk [3]
+    7400004: AttackUnarmed [12]
+    7400006: Death [14]
+    9500000: //RootNode
+    13700000: turtle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

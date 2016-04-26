@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 01709c9cf31f7435daa730240aa3b7a0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: abyssal_illidan
+    100002: abyssal_illidan 1
+    100004: abyssal_illidan_bone_0
+    100006: abyssal_illidan_bone_1
+    100008: abyssal_illidan_bone_10
+    100010: abyssal_illidan_bone_11
+    100012: abyssal_illidan_bone_12
+    100014: abyssal_illidan_bone_13
+    100016: abyssal_illidan_bone_14
+    100018: abyssal_illidan_bone_15
+    100020: abyssal_illidan_bone_16
+    100022: abyssal_illidan_bone_17
+    100024: abyssal_illidan_bone_18
+    100026: abyssal_illidan_bone_19
+    100028: abyssal_illidan_bone_2
+    100030: abyssal_illidan_bone_20
+    100032: abyssal_illidan_bone_21
+    100034: abyssal_illidan_bone_22
+    100036: abyssal_illidan_bone_23
+    100038: abyssal_illidan_bone_24
+    100040: abyssal_illidan_bone_25
+    100042: abyssal_illidan_bone_26
+    100044: abyssal_illidan_bone_27
+    100046: abyssal_illidan_bone_28
+    100048: abyssal_illidan_bone_3
+    100050: abyssal_illidan_bone_4
+    100052: abyssal_illidan_bone_49
+    100054: abyssal_illidan_bone_5
+    100056: abyssal_illidan_bone_57
+    100058: abyssal_illidan_bone_58
+    100060: abyssal_illidan_bone_6
+    100062: abyssal_illidan_bone_7
+    100064: abyssal_illidan_bone_8
+    100066: abyssal_illidan_bone_9
+    100068: //RootNode
+    400000: abyssal_illidan
+    400002: abyssal_illidan 1
+    400004: abyssal_illidan_bone_0
+    400006: abyssal_illidan_bone_1
+    400008: abyssal_illidan_bone_10
+    400010: abyssal_illidan_bone_11
+    400012: abyssal_illidan_bone_12
+    400014: abyssal_illidan_bone_13
+    400016: abyssal_illidan_bone_14
+    400018: abyssal_illidan_bone_15
+    400020: abyssal_illidan_bone_16
+    400022: abyssal_illidan_bone_17
+    400024: abyssal_illidan_bone_18
+    400026: abyssal_illidan_bone_19
+    400028: abyssal_illidan_bone_2
+    400030: abyssal_illidan_bone_20
+    400032: abyssal_illidan_bone_21
+    400034: abyssal_illidan_bone_22
+    400036: abyssal_illidan_bone_23
+    400038: abyssal_illidan_bone_24
+    400040: abyssal_illidan_bone_25
+    400042: abyssal_illidan_bone_26
+    400044: abyssal_illidan_bone_27
+    400046: abyssal_illidan_bone_28
+    400048: abyssal_illidan_bone_3
+    400050: abyssal_illidan_bone_4
+    400052: abyssal_illidan_bone_49
+    400054: abyssal_illidan_bone_5
+    400056: abyssal_illidan_bone_57
+    400058: abyssal_illidan_bone_58
+    400060: abyssal_illidan_bone_6
+    400062: abyssal_illidan_bone_7
+    400064: abyssal_illidan_bone_8
+    400066: abyssal_illidan_bone_9
+    400068: //RootNode
+    4300000: abyssal_illidan
+    7400000: Stand [0]
+    7400002: Run [2]
+    7400004: AttackUnarmed [3]
+    7400006: Death [6]
+    7400008: SpecialUnarmed [14]
+    9500000: //RootNode
+    13700000: abyssal_illidan
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
