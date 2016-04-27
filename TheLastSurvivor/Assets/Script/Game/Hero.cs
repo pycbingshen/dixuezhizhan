@@ -65,10 +65,13 @@ public class Hero : XUnit
 
         for(int i = 0 ; i < 4 ; i ++)
         {
-            color.a -= 0.15f; 
-            for(int j = 0; j < m_Renderers.Length; j++)
-                m_Renderers[j].material.SetColor("_Color", color);
-            for(int j = 0 ; j < 5 ; j++)
+            color.a -= 0.15f;
+            for (int j = 0; j < m_Renderers.Length; j++)
+            {
+                m_Renderers[j].sharedMaterial.color = color;//material.SetColor("_Color", color);
+                print(color);
+            }
+            for (int j = 0 ; j < 5 ; j++)
                 yield return new WaitForFixedUpdate();
         }
 
@@ -77,7 +80,10 @@ public class Hero : XUnit
         {
             color.a = 0;
             for (int j = 0; j < m_Renderers.Length; j++)
-                m_Renderers[j].material.SetColor("_Color", color);
+            {
+                m_Renderers[j].sharedMaterial.color = color;//material.SetColor("_Color", color);
+                print(color);
+            }
             HP.gameObject.SetActive(false);
             GameObject.Find("UI Root/Name/" + gameObject.name).SetActive(false);
         }
@@ -90,7 +96,10 @@ public class Hero : XUnit
         _moveSpeed = 8f;
         color.a = 1;
         for (int j = 0; j < m_Renderers.Length; j++)
-            m_Renderers[j].material.SetColor("_Color", color);
+        {
+            m_Renderers[j].sharedMaterial.color = color;//material.SetColor("_Color", color);
+            print(color);
+        }
         if (HP != null)
             HP.gameObject.SetActive(true);
         Transform ts = GameObject.Find("UI Root/Name").transform.Find(gameObject.name);

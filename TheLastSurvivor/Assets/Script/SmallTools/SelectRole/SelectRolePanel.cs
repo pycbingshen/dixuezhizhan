@@ -126,7 +126,8 @@ public class SelectRolePanel : MonoBehaviour {
         proto.role_id = GeneralData.charaID;
         mess.m_proto = proto;
         program.SendQueue.push(mess);
-        
+
+        print("发送职业ID："+GeneralData.charaID);
     }
 
     private bool IsContent(string str)
