@@ -5,7 +5,7 @@ using System.Text;
 
 namespace client
 {
-    class RoundRobinQueue
+    public class RoundRobinQueue
     {
         const int QUEUELENGTH = 100000;
         CMessage[] m_que = new CMessage[QUEUELENGTH];

@@ -11,7 +11,7 @@ using System.Collections;
 
 namespace client
 {
-    class program : MonoBehaviour
+    public class program : MonoBehaviour
     {
         const int PORT = 20000;
         const string IPADDRESS = "10.0.128.147";
@@ -22,12 +22,14 @@ namespace client
         static bool isend;
         void Start()
         {
+            print("programStart");
             DontDestroyOnLoad(gameObject);
             EditorApplication.playmodeStateChanged += EditorCallBack;
         }
 
         public static void StartConnect()
-        { 
+        {
+            print("programStartConnect");
             RegisterMessage();
             if (TcpSocket.Instance().ConnectToServer(IPADDRESS, PORT) == 0)
             {

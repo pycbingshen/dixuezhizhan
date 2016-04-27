@@ -9,12 +9,14 @@ public class LoginPanel : MonoBehaviour {
     UIPanel block;
     HallPanel hallPanel;
     Tip tip;
+    public program server;
     void Awake(){
         userName=gameObject.transform.Find("Label/UserName/Input/Label").GetComponent<UILabel>();
         password=gameObject.transform.Find("Label/Password/Input").GetComponent<UIInput>();
         hallPanel=gameObject.transform.parent.Find("HallPanel").GetComponent<HallPanel>();
         block = GameObject.Find("UI Root").transform.Find("Block").GetComponent<UIPanel>();
         tip = GameObject.Find("UI Root").transform.Find("Panel/Tip").GetComponent<Tip>();
+        
         print("AmyName:" + GeneralData.myName);
     }
 
@@ -23,6 +25,7 @@ public class LoginPanel : MonoBehaviour {
         print("myName:"+ GeneralData.myName);
         if (GeneralData.myName == null)
         {
+            Instantiate(server);
             program.StartConnect();
             Debug.Log("connect");
         }
