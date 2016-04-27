@@ -77,6 +77,7 @@ public class Controller: MonoBehaviour
                     program.RecvQueue.pop();
                     if(mess.m_proto is SCGameStart)
                     {
+                        GameObject.Find("UI Root/load").SetActive(false);
                         Debug.Log("Start");
                         Time.timeScale = 1;
                         _isGameStart = true;
