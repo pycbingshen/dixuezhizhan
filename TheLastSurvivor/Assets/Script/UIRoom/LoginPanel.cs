@@ -30,6 +30,7 @@ public class LoginPanel : MonoBehaviour {
             Debug.Log("connect");
         }
         else {
+            Time.timeScale = 1;
             hallPanel.OpenHall();
             gameObject.SetActive(false);
         }
