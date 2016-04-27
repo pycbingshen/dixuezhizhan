@@ -22,5 +22,23 @@ public class LoadRoom : MonoBehaviour
         //Application.LoadLevel("Room");
     }
 
-    
+    void FixedUpdate()
+    {
+        if (flag)
+        {
+            if (!program.RecvQueue.empty())
+            {
+                CMessage mess = program.RecvQueue.front();
+                program.RecvQueue.pop();
+
+                if (mess.m_proto is SCGameEnd)
+                {
+                    SCGameEnd gameMess = (SCGameEnd)mess.m_proto;
+                    program.RecvQueue.init();
+                    Application.LoadLevel("Room");
+                    return;
+                }
+            }
+        }
+    }
 }

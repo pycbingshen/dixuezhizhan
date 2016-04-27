@@ -8,7 +8,6 @@ public class Info : MonoBehaviour {
     float lastTime = 1;
     //float nowTime=-1;
     float[] lTime = new float[3];
-    int[] se = new int[3];
 
     float showTime = 5;
     float delayTime = 1f;
@@ -22,9 +21,10 @@ public class Info : MonoBehaviour {
     int audioId = -1;
     float audioDelayTime = 1f;
     float audiolastTime = -100;
-
+    AudioSource se;
     void Awake()
     {
+        se= GetComponent<AudioSource>();
         label[0] = gameObject.transform.Find("Label3").GetComponent<UILabel>();
         label[1] = gameObject.transform.Find("Label2").GetComponent<UILabel>();
         label[2] = gameObject.transform.Find("Label1").GetComponent<UILabel>();
@@ -66,15 +66,15 @@ public class Info : MonoBehaviour {
         killTime[killId] = Time.time;
 
         if (conKillNum[killId] == 0) qInfo[rearPlus()] = info;
-        if (conKillNum[killId] == 1) qInfo[rearPlus()] = info + " ，完成双杀";
-        if (conKillNum[killId] == 2) qInfo[rearPlus()] = info + " ，完成三杀";
-        if (conKillNum[killId] == 3) qInfo[rearPlus()] = info + " ，完成四杀";
-        if (conKillNum[killId] == 4) qInfo[rearPlus()] = info + " ，完成五杀";
+        if (conKillNum[killId] == 1) { qInfo[rearPlus()] = info + " ，完成双杀"; audioId = 2; }
+        if (conKillNum[killId] == 2) { qInfo[rearPlus()] = info + " ，完成三杀"; audioId = 3; }
+        if (conKillNum[killId] == 3) { qInfo[rearPlus()] = info + " ，完成四杀";audioId = 4; }
+        if (conKillNum[killId] == 4) { qInfo[rearPlus()] = info + " ，完成五杀";audioId = 5; }
 
-        if (killNum[killId] == 6) qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经无人能挡！";
-        if (killNum[killId] == 7) qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经如同神一般！";
-        if (killNum[killId] == 8) qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经超神了！";
-    }
+        if (killNum[killId] == 6) { qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经无人能挡！"; audioId = 6; }
+        if (killNum[killId] == 7) { qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经如同神一般！"; audioId = 7; }
+            if (killNum[killId] == 8) { qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经超神了！"; audioId = 8; }
+            }
 
     int rearPlus(){
         int tmp = rear;
@@ -106,6 +106,8 @@ public class Info : MonoBehaviour {
 
     void ShowSE()
     {
+        se.clip = KillSe[audioId];
+        se.Play();
         audiolastTime = Time.time;
         audioId = -1;
     }

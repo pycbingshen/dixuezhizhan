@@ -59,7 +59,7 @@ public class Controller: MonoBehaviour
         //Debug.Log(Time.realtimeSinceStartup);
         if (Time.timeScale == 0)
         {
-            if(_isGameStart)
+            if(_isGameStart&& !program.RecvQueue.empty())
             {
                 CMessage mess = program.RecvQueue.front();
                 int maxFrameNum = program.RecvQueue.GetLastFrame();
@@ -305,13 +305,7 @@ public class Controller: MonoBehaviour
             return;
         }
 
-        if (mess.m_proto is SCGameEnd)
-        {
-            SCGameEnd gameMess = (SCGameEnd)mess.m_proto;
-            program.RecvQueue.init();
-            Application.LoadLevel("Room");
-            return;
-        }
+
     }
 
 }

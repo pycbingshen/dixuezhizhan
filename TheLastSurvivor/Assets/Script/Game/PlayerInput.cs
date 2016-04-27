@@ -168,7 +168,7 @@ public class PlayerInput : MonoBehaviour
         {
             if(m_MyHero.CurrentMoveDirection == -1)
                 _tween.PlayForward();
-            Debug.Log(moveNum);
+            //Debug.Log(moveNum);
 //            LastMoveInput = moveNum;
             CMessage mess = new CMessage();
             mess.m_head.m_framenum = Controller.CurrentFrameNum;
