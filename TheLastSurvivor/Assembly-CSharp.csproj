@@ -316,6 +316,7 @@
      <Compile Include="Assets\Script\SmallTools\Info.cs" />
      <Compile Include="Assets\Script\SmallTools\Jiangli.cs" />
      <Compile Include="Assets\Script\SmallTools\Joystick.cs" />
+     <Compile Include="Assets\Script\SmallTools\KillSE.cs" />
      <Compile Include="Assets\Script\SmallTools\NameFollow.cs" />
      <Compile Include="Assets\Script\SmallTools\NameManage.cs" />
      <Compile Include="Assets\Script\SmallTools\RankList.cs" />

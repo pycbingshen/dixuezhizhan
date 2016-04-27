@@ -130,11 +130,11 @@ public class RankList : MonoBehaviour
                 levelItem [i].gameObject.SetActive(false);
             }
         }
-        for (int i = 1; i <= GeneralData.PlayerNum; i++)
-        {
-            print("----");
-            print(playerIdToRankID[i]);
-        }
+        //for (int i = 1; i <= GeneralData.PlayerNum; i++)
+        //{
+        //    print("----");
+        //    print(playerIdToRankID[i]);
+        //}
     }
 	
     public void Kill(int killId,int dieId){
@@ -169,11 +169,11 @@ public class RankList : MonoBehaviour
             }
             Refresh(playerIdToRankID[dieId], -1);
         }
-        for (int i = 1; i <= GeneralData.PlayerNum; i++)
-        {
-            print("----");
-            print(playerIdToRankID[i]);
-        }
+        //for (int i = 1; i <= GeneralData.PlayerNum; i++)
+        //{
+        //    print("----");
+        //    print(playerIdToRankID[i]);
+        //}
     }
 
     public void Refresh(int rankid, int val)

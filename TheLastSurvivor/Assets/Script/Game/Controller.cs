@@ -137,7 +137,7 @@ public class Controller: MonoBehaviour
             {
                 _addSpeed = false;
                 Time.timeScale = 1;
-                Debug.Log("resume");
+                //Debug.Log("resume");
             }
         }
     }

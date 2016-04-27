@@ -143,7 +143,7 @@ public class PlayerInput : MonoBehaviour
                 if(m_MyHero.CurrentMoveDirection != -1)
                 {
                     _tween.PlayReverse();
-                    Debug.Log("-1");
+                    //Debug.Log("-1");
 //                    LastMoveInput = -1;
                     CMessage mess = new CMessage();
                     mess.m_head.m_framenum = Controller.CurrentFrameNum;
