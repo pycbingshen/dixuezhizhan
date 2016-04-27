@@ -15,10 +15,12 @@ public class LoginPanel : MonoBehaviour {
         hallPanel=gameObject.transform.parent.Find("HallPanel").GetComponent<HallPanel>();
         block = GameObject.Find("UI Root").transform.Find("Block").GetComponent<UIPanel>();
         tip = GameObject.Find("UI Root").transform.Find("Panel/Tip").GetComponent<Tip>();
+        print("AmyName:" + GeneralData.myName);
     }
 
     void Start(){
         block.gameObject.SetActive(false);
+        print("myName:"+ GeneralData.myName);
         if (GeneralData.myName == null)
         {
             program.StartConnect();

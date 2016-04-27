@@ -11,7 +11,7 @@ public class Info : MonoBehaviour {
     int[] se = new int[3];
 
     float showTime = 5;
-    float delayTime = 1.5f;
+    float delayTime = 1f;
 
     float[] killTime = new float[9];
     int[] killNum = new int[9];
@@ -19,6 +19,9 @@ public class Info : MonoBehaviour {
     int[] conKillNum = new int[9];
 
     public AudioClip[] KillSe;
+    int audioId = -1;
+    float audioDelayTime = 1f;
+    float audiolastTime = -100;
 
     void Awake()
     {
@@ -101,9 +104,16 @@ public class Info : MonoBehaviour {
         lTime[2] = Time.time;
     }
 
+    void ShowSE()
+    {
+        audiolastTime = Time.time;
+        audioId = -1;
+    }
+
     void FixedUpdate()
     {
         if (size>0 && Time.time - lastTime > delayTime)ShowInfo();
+        if (audioId != -1 && Time.time - audiolastTime > audioDelayTime) ShowSE();
 
         for (int i = 0; i < 3; i++)
         {
