@@ -82,7 +82,7 @@ public class Info : MonoBehaviour {
         if (conKillNum[killId] == 3) { qInfo[rearPlus()] = info + " ，完成四杀！";audioId = 4; }
         if (conKillNum[killId] == 4) { qInfo[rearPlus()] = info + " ，完成五杀！";audioId = 5; }
 
-        if (conKillNum[dieId] >= 3) { qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 终结 "+ GeneralData.PlayerName[dieId]; audioId = 10; }
+        if (killNum[dieId] >= 3) { qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 终结 "+ GeneralData.PlayerName[dieId]; audioId = 10; }
 
         killNum[dieId] = 0;
         conKillNum[dieId] = 0;
