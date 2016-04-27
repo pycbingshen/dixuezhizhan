@@ -246,8 +246,7 @@ public class Controller: MonoBehaviour
 
             return ;
         }
-
-        //这两个记得加内容
+        
         if (mess.m_proto is SCChoseRole)
         {
             SCChoseRole gameMess = (SCChoseRole)mess.m_proto;
@@ -264,8 +263,19 @@ public class Controller: MonoBehaviour
                 Hero hero = go.GetComponent<Hero>();
 
                 RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
-                int listID = list.playerIdToRankID[gameMess.player];
-                list.Refresh( listID , -list.num[listID] );
+
+                if (GeneralData.gameModeNum == 2)
+                {
+                    int listID = list.playerIdToRankID[gameMess.player];
+                    list.Refresh(listID, -list.num[listID]);
+
+                    if (GeneralData.teamModeNum == 2)
+                    {
+                        int teamId=GeneralData.TeamId[gameMess.player];
+                        if (teamId == 2) teamId = list.team2num;
+                        list.Refresh(teamId, -list.num[listID]);
+                    }
+                }
                 GameJudgement.DealWith();
 //                if(GeneralData.gameModeNum == 2 && list.num[list.playerIdToRankID[gameMess.player]] != 0)
 //                {
@@ -287,10 +297,19 @@ public class Controller: MonoBehaviour
                 Destroy(hero.NameLabel);
                 Destroy(go);
             }
+
             Info m_Info = GameObject.Find("UI Root/Info").GetComponent<Info>();
             m_Info.AddInfo("玩家 " + GeneralData.PlayerName[gameMess.player] + " 离开了游戏");
             print("玩家" + gameMess.player + "退出游戏");
             //player
+            return;
+        }
+
+        if (mess.m_proto is SCGameEnd)
+        {
+            SCGameEnd gameMess = (SCGameEnd)mess.m_proto;
+            program.RecvQueue.init();
+            Application.LoadLevel("Room");
             return;
         }
     }

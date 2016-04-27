@@ -180,6 +180,8 @@ namespace client
             MessageRegister.Instance().Register(0x001d, typeof(SCSkill));
             MessageRegister.Instance().Register(0x001e, typeof(CSHeartbeat));
             MessageRegister.Instance().Register(0x001f, typeof(CSGameEnd));
+            MessageRegister.Instance().Register(0x0020, typeof(SCGameEnd));
+
 
 
 

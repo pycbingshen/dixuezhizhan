@@ -195,6 +195,7 @@ public class RankList : MonoBehaviour
         }
         if (val < 0)
         {
+            if (rankid == team2num ||rankid==1) return;
             for (int i = rankid + 1; i <= GeneralData.PlayerNum+2; i++)
             {
                 if (i == team2num) return;
