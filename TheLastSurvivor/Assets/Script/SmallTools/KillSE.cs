@@ -3,13 +3,16 @@ using System.Collections;
 
 public class KillSE : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    AudioSource se;
+
+    void Awake()
+    {
+        se = GetComponent<AudioSource>();
+    }
+
+    public void PlaySE(AudioClip clip)
+    {
+        se.clip = clip;
+        se.Play();
+    }
 }
