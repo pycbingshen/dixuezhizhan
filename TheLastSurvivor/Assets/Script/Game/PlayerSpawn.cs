@@ -56,7 +56,7 @@ public class PlayerSpawn: MonoBehaviour {
         
         GameObject newHP = Instantiate(HPPrefab) as GameObject;
         if (GeneralData.TeamId [index] != GeneralData.TeamId [GeneralData.myID])
-            newHP.transform.GetChild(0).GetComponent<UISprite>().color = new Color(1, 1, 0, 1);
+            newHP.transform.GetChild(0).GetComponent<UISprite>().color = new Color(1, 0, 0, 1);
         newHP.name = name;
         newHP.transform.parent = HPParent;
         newHP.transform.localScale = Vector3.one;
