@@ -32,21 +32,33 @@ public static class GameJudgement
                 item.gameObject.SetActive(false);
                 continue;
             }
-
-            item.Find("nickname").GetComponent<UILabel>().text = ranklist.nameItem[i].text;
-            if(ranklist.nameItem[i].text=="队伍1"|| ranklist.nameItem[i].text == "队伍2")continue;
-            int kill=-1, die=-1;
+            UILabel nick = item.Find("nickname").GetComponent<UILabel>();
+            nick.text = ranklist.nameItem[i].text;
+            if (ranklist.nameItem[i].text == "队伍1" || ranklist.nameItem[i].text == "队伍2")
+            {
+                nick.color = new Color(1,1,0);
+                item.Find("killnum").GetComponent<UILabel>().text = "";
+                item.Find("diednum").GetComponent<UILabel>().text = "";
+                item.Find("score").GetComponent<UILabel>().text = "";
+                continue;
+            }
+            int kill = -1, die = -1;
+            float score =-1;
             for(int j=1; j <= 8; j++)
             {
                 if (ranklist.playerIdToRankID[j] == i)
                 {
                     kill = GeneralData.killnum[j];
                     die = GeneralData.diednum[j];
-                    Debug.Log("玩家"+j+" 击杀"+kill+" 死亡"+die);
+                    //Debug.Log("玩家"+j+" 击杀"+kill+" 死亡"+die);
+                    int val = die;
+                    if (die > 40) val = 40;
+                    score = kill * 1.5f *(1- val*0.02f);
                 }
             }
             item.Find("killnum").GetComponent<UILabel>().text = kill.ToString();
             item.Find("diednum").GetComponent<UILabel>().text = die.ToString();
+            item.Find("score").GetComponent<UILabel>().text = score.ToString();
         }
 
         Debug.Log("Game End!!!Game End!!!Game End!!!Game End!!!Game End!!!Game End!!!");

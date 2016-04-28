@@ -110,18 +110,18 @@ public class Controller: MonoBehaviour
                     if(maxFrameNum == mess.m_head.m_framenum)
                     {
                         Time.timeScale = 0;
-                        Debug.Log("Next frame haven't enough!");
+                        //Debug.Log("Next frame haven't enough!");
                         break ;
                     }
 
                     if(!_addSpeed && maxFrameNum > mess.m_head.m_framenum + DT)
                     {
-                        Debug.Log(maxFrameNum + "  " + mess.m_head.m_framenum + "*******************");
+                        //Debug.Log(maxFrameNum + "  " + mess.m_head.m_framenum + "*******************");
                         Time.timeScale = 3;
                         _addSpeed = true;
                         _addSpeedNum = AD;
 
-                        Debug.Log("Too slowly! Quicken!");
+                        //Debug.Log("Too slowly! Quicken!");
                         return ;
                     }
 
