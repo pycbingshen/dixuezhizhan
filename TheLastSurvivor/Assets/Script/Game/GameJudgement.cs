@@ -6,7 +6,7 @@ public static class GameJudgement
     static public int KillTargetNum;
     static public int AlivePlayerNum;
     static public int[] FlagGetNum = new int[2];
-    static private bool flag = false;
+    static public bool flag = false;
     static public void GameEnd(bool win)
     {
         if (flag) return;
@@ -90,9 +90,11 @@ public static class GameJudgement
                 }
             }
 
+            Debug.Log("xxx"+team2num);
             if(GeneralData.teamModeNum == 2)
             {
-                if(list.num[1] >= GeneralData.gameOption || list.num[list.team2num] >= GeneralData.gameOption)
+                Debug.Log("xxx" + team2num+" "+ GeneralData.gameOption+" "+ GeneralData.myTeamId);
+                if (list.num[1] >= GeneralData.gameOption || list.num[list.team2num] >= GeneralData.gameOption)
                 {
                     if(list.num[1] >= GeneralData.gameOption)
                     {

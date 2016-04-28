@@ -20,6 +20,7 @@ public class LoadGame : MonoBehaviour
 
     IEnumerator LoadScene()
     {
+        Debug.Log(GeneralData.myTeamId);
         async = Application.LoadLevelAsync("Fighting");
 
         yield return async;
