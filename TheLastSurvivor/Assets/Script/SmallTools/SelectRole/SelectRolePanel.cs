@@ -73,7 +73,7 @@ public class SelectRolePanel : MonoBehaviour {
                         label = Introduce.GetComponent<UILabel>();
                         label.text = "技能说明";
                         label = Content.GetComponent<UILabel>();
-                        label.text = "每个职业技能由4个通用技能以及2个职业技能组成";
+                        label.text = "每个职业技能由3个通用技能以及2个职业技能组成";
                         label = Skill.GetComponent<UILabel>();
                         label.text = "通用技能";
                     }
@@ -96,16 +96,16 @@ public class SelectRolePanel : MonoBehaviour {
                     else
                     {
                         Skill3.gameObject.SetActive(true);
-                        Skill4.gameObject.SetActive(true);
+                        Skill4.gameObject.SetActive(false);
                         label = Skill3.Find("Label").GetComponent<UILabel>();
                         label.text = item.GetAttribute("skill3s");
                         sprite = Skill3.GetComponent<UISprite>();
                         sprite.spriteName = item.GetAttribute("skill3icon");
 
-                        label = Skill4.Find("Label").GetComponent<UILabel>();
-                        label.text = item.GetAttribute("skill4s");
-                        sprite = Skill4.GetComponent<UISprite>();
-                        sprite.spriteName = item.GetAttribute("skill4icon");
+                        //label = Skill4.Find("Label").GetComponent<UILabel>();
+                        //label.text = item.GetAttribute("skill4s");
+                        //sprite = Skill4.GetComponent<UISprite>();
+                        //sprite.spriteName = item.GetAttribute("skill4icon");
                     }
 
                     break;

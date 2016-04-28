@@ -4,11 +4,11 @@
 	<messages
 		id = "-1"
 		explanation = "说明说明说明"
-    skill1s = "普通攻击"
+    skill1s = "普通攻击：(单击施法)对面前的敌人进行攻击（攻击范围内没目标，技能不点亮）"
 		skill1icon = "0_1"
-    skill2s = "手里剑"
+    skill2s = "手里剑：(拖拽施法)发出手里剑，对一条直线上的敌人造成伤害。"
     skill2icon = "1_yueguangsuipian"
-    skill3s = "无敌"
+    skill3s = "金钟罩：(单击施法)短时间内完全格挡所有伤害。"
     skill3icon = "0_2"
     skill4s = "闪避"
     skill4icon = "1_tifeilianji"
@@ -17,40 +17,40 @@
 
   <messages
 		id = "0"
-		explanation = "说明说明说明"
-    skill1s = "隐身"
+		explanation = "潜行者是以偷袭为主要战术的近战职业。拥有隐身与近身范围伤害。"
+    skill1s = "隐身：(单击施法)降低自己的移动速度，进入隐身状态。"
     skill1icon = "4_tiantangshenpan"
-    skill2s = "雷霆"
+    skill2s = "震击：(单击施法)以自身为中心，对周围敌人造成伤害。"
     skill2icon = "4_liansuoshandian"
     >
   </messages>
 
   <messages
 		id = "1"
-		explanation = "说明说明说明"
-    skill1s = "闪现"
+		explanation = "格斗家是以灵活的移动的近战职业。拥有位移与范围控制技能。"
+    skill1s = "闪现：(单击施法)向面朝方向瞬移一段距离，改技能可穿墙。"
     skill1icon = "3_taotuo"
-    skill2s = "范围禁锢"
+    skill2s = "禁锢：(单击施法)禁锢周围敌人一段时间，并且被禁锢的敌人无法释放技能。"
     skill2icon = "2_kunbangsheji"
     >
   </messages>
 
   <messages
 		id = "2"
-		explanation = "说明说明说明"
-    skill1s = "火球"
+		explanation = "熊猫人有强力的范围伤害技能的近战职业。拥有远程范围伤害与近身范围伤害。"
+    skill1s = "陨石：(拖拽施法)1秒后，从天而降一个陨石，对目标区域造成伤害。"
     skill1icon = "309"
-    skill2s = "雷霆"
+    skill2s = "震击：(单击施法)以自身为中心，对周围敌人造成伤害。"
     skill2icon = "4_liansuoshandian"
     >
   </messages>
 
   <messages
 		id = "3"
-		explanation = "说明说明说明"
-    skill1s = "远程攻击"
+		explanation = "弓箭手是本游戏唯一的远程职业。拥有远距离的普通攻击与射程极远的技能。"
+    skill1s = "远程攻击：(单击施法)替换普通攻击，拥有比普通攻击更大的攻击范围。"
     skill1icon = "2_jianshugeming"
-    skill2s = "穿心箭"
+    skill2s = "穿心箭：(拖拽施法)发出穿心箭，对一条直线上的敌人造成伤害。"
     skill2icon = "2_mofajianshi"
     >
   </messages>
