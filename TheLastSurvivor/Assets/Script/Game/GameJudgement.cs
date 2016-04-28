@@ -22,8 +22,8 @@ public static class GameJudgement
         if (GeneralData.teamModeNum == 2) num+=2;
         for (int i = 1; i <= 10; i++)
         {
-            Transform item=root.transform.Find("List/item" + i);
-            if(i<= GeneralData.teamModeNum)
+            Transform item=root.transform.Find("GameEnd/List/item" + i);
+            if(i<= num)
             {
                 item.gameObject.SetActive(true);
             }
