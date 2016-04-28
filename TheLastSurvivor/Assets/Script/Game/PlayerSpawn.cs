@@ -118,6 +118,16 @@ public class PlayerSpawn: MonoBehaviour {
 
     public void Resume(int index, int spawnIndex)
     {
+        if (GeneralData.gameModeNum == 2)
+        {
+            RankList rank = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
+            int dieid = index;
+            int rankid = rank.playerIdToRankID[dieid];
+            Debug.Log("rankid:" + rankid + " dieid:" + dieid);
+            Debug.Log("剩余生命" + rank.num[rankid]);
+            if (rank.num[rankid] <= 0) return;
+        }
+        Debug.Log("复活");
         Vector3 spawnPos;
         while (true)
         {

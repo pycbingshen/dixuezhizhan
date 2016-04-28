@@ -78,15 +78,6 @@ public class XUnit : MonoBehaviour
             
             GameJudgement.DealWith();
             attacker.GetComponent<XUnit>().GetExp(_expWhenIsDie);
-            if(GeneralData.gameModeNum == 2){
-                RankList rank= GameObject.Find("UI Root/RankList").GetComponent<RankList>();
-                int dieid = int.Parse(gameObject.name);
-                int rankid=rank.playerIdToRankID[dieid];
-                Debug.Log("rankid:"+rankid+ " dieid:"+ dieid);
-                Debug.Log("剩余生命"+rank.num[rankid]);
-                if (rank.num[rankid] <= 0) return;
-            }
-            Debug.Log("复活");
             Dying();
         }
     }
