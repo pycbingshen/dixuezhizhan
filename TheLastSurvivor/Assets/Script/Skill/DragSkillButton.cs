@@ -46,7 +46,7 @@ public class DragSkillButton : ButtonBase
         else
         {
 //            m_skill.CreatSkillEffect(SkillType.feibiao, transform.localPosition);
-            if(skillName == SkillType.feibiao && Vector3.SqrMagnitude(transform.position) < 100f)
+            if(skillName == SkillType.feibiao && Vector3.Magnitude(transform.localPosition) < 25f)
             {
                 CMessage mess2 = new CMessage();
                 mess2.m_head.m_framenum = Controller.CurrentFrameNum;
@@ -58,6 +58,14 @@ public class DragSkillButton : ButtonBase
                 proto2.skill_id = (int) skillName;
                 mess2.m_proto = proto2;
                 program.SendQueue.push(mess2);
+
+                if(IndicatorType == 1)
+                    Indicator.SetState(gameObject, Indicator.Arrow,out Indicator.ArrowActive, false);
+                else
+                    Indicator.SetState(gameObject, Indicator.Magic,out Indicator.MagicActive, false);
+                _circle.transform.localScale = Vector3.one;
+                transform.localPosition = Vector3.zero;
+                return ;
             }
             CMessage mess = new CMessage();
             mess.m_head.m_framenum = Controller.CurrentFrameNum;
