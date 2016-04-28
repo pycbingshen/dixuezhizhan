@@ -20,7 +20,10 @@ public class AnimaTurnEvent : MonoBehaviour
         {
             GameObject beAttackGo = GetComponent<XUnit>()._attackTargetGo;
             if (beAttackGo != null)
+            {
+                Debug.Log("普攻\n");
                 beAttackGo.GetComponent<XUnit>().BeAttacked(gameObject, gameObject.GetComponent<XUnit>()._attackValue);
+            }
         }
     }
 }

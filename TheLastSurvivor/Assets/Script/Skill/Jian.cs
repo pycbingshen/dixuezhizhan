@@ -25,7 +25,7 @@ public class Jian : MonoBehaviour
     {
         if (collider.gameObject != TargetGo)
             return;
-
+        Debug.Log("弓箭手的箭\n");
         TargetGo.GetComponent<Hero>().BeAttacked(UserGo, 1);
         Destroy(gameObject);
     }

@@ -29,7 +29,10 @@ public class Feibiao : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if(collider.tag == "Player" && user != collider.gameObject)
+        if (collider.tag == "Player" && user != collider.gameObject)
+        {
+            Debug.Log("飞镖\n");
             collider.gameObject.GetComponent<XUnit>().BeAttacked(user, 1);
+        }
     }
 }

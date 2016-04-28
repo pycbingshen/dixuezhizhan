@@ -113,7 +113,7 @@ namespace client
                 {
                     TcpSocket.Instance().SplitMessage();
                 }
-                Thread.Sleep(1);
+                Thread.Sleep(5);
             }
         }
 
@@ -129,7 +129,7 @@ namespace client
                     int ret = TcpSocket.Instance().SendMessage(mess);
                     if (ret == 0) return;
                 }
-                Thread.Sleep(1);
+                Thread.Sleep(5);
             }
         }
 

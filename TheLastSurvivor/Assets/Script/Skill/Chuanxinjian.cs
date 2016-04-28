@@ -19,7 +19,10 @@ public class Chuanxinjian : MonoBehaviour
     
     void OnTriggerEnter(Collider collider)
     {
-        if(collider.tag == "Player" && user != collider.gameObject)
+        if (collider.tag == "Player" && user != collider.gameObject)
+        {
+            Debug.Log("穿心箭\n");
             collider.gameObject.GetComponent<XUnit>().BeAttacked(user, 1);
+        }
     }
 }

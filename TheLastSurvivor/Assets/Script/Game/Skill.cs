@@ -196,8 +196,11 @@ public class Skill : MonoBehaviour
                 continue;
             if(attackerGo == beAttackGo)
                 continue;
-            if(Vector3.Distance(attackerGo.transform.position, beAttackGo.transform.position) < range)
+            if (Vector3.Distance(attackerGo.transform.position, beAttackGo.transform.position) < range)
+            {
+                Debug.Log("雷霆\n");
                 beAttackGo.GetComponent<Hero>().BeAttacked(attackerGo, 1);
+            }
         }
     }
 
@@ -211,8 +214,11 @@ public class Skill : MonoBehaviour
                 continue;
             if(attackerGo == beAttackGo)
                 continue;
-            if(Vector3.Distance(pos, beAttackGo.transform.position) < range)
+            if (Vector3.Distance(pos, beAttackGo.transform.position) < range)
+            {
+                Debug.Log("火球\n");
                 beAttackGo.GetComponent<Hero>().BeAttacked(attackerGo, 1);
+            }
         }
     }
 
