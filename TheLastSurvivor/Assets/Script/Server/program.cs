@@ -6,7 +6,7 @@ using client;
 using System.Threading;
 using proto_islandsurvival;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 using System.Collections;
 
 namespace client
@@ -24,7 +24,7 @@ namespace client
         {
             print("programStart");
             DontDestroyOnLoad(gameObject);
-            EditorApplication.playmodeStateChanged += EditorCallBack;
+            //EditorApplication.playmodeStateChanged += EditorCallBack;
         }
 
         public static void StartConnect()
@@ -49,7 +49,7 @@ namespace client
 
         public void EditorCallBack()
         {
-            if (!EditorApplication.isPlaying && !EditorApplication.isPaused)
+            //if (!EditorApplication.isPlaying && !EditorApplication.isPaused)
             {
                 if (TcpSocket.Instance() != null)
                 {
