@@ -154,6 +154,7 @@ public class Skill : MonoBehaviour
                     {
                         if(thunderGo.GetComponent<Hero>()._isMyHero)
                             StartCoroutine(GameObject.Find("Controller").GetComponent<PlayerInput>().CanNotControll(75));
+                        GameObject.Find("Player/" + i.ToString()).GetComponent<Hero>().Beikongzhi(75);
                         GameObject newThunder = Instantiate(LeidianPrefab) as GameObject;
                         newThunder.transform.parent = transform;
                         newThunder.GetComponent<ThunderLightningBolt>().target = thunderGo.transform;

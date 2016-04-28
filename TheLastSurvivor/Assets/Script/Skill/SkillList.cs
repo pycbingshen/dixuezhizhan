@@ -96,7 +96,6 @@ public class SkillList : MonoBehaviour
                 }
             }
         }
-
         m_PuGongBut = transform.FindChild("pugong/Icon").GetComponent<UIButton>();
         m_PuGongCD = transform.FindChild("pugong/CD").gameObject;
         m_PlayerInput = GameObject.Find("Controller").GetComponent<PlayerInput>();
@@ -120,9 +119,9 @@ public class SkillList : MonoBehaviour
     {
         if (GeneralData.choosed)
         {
-            m_PuGongBut.isEnabled = m_PlayerInput.CanControll && !m_PuGongCD.activeSelf && PugongPD();
             Hero hero = GameObject.Find("Player/" + GeneralData.myID.ToString()).GetComponent<Hero>();
-            m_FeibiaoBut.isEnabled = !hero._isDead && hero.FeibiaoNumber > 0;
+            m_PuGongBut.isEnabled = !hero._isDead && m_PlayerInput.CanControll && !hero.beikongzhi && !m_PuGongCD.activeSelf && PugongPD();
+            m_FeibiaoBut.isEnabled = !hero._isDead && m_PlayerInput.CanControll && !hero.beikongzhi && hero.FeibiaoNumber > 0;
         }
     }
 

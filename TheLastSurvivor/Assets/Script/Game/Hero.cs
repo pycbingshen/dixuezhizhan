@@ -15,6 +15,7 @@ public class Hero : XUnit
     [HideInInspector][System.NonSerialized] public Renderer[] m_Renderers;
     [HideInInspector][System.NonSerialized] public bool isRangeHero = false;
     [HideInInspector][System.NonSerialized] public int FeibiaoNumber = 2;
+    [HideInInspector][System.NonSerialized] public bool beikongzhi = false;
     private CharacterController _cc;
     private Vector3 _moveDelta;
 
@@ -56,6 +57,19 @@ public class Hero : XUnit
     public void StartHidding(int disHideTime)
     {
         StartCoroutine(Hidding(disHideTime));
+    }
+
+    public void Beikongzhi(int time)
+    {
+        StartCoroutine(beikong(time));
+    }
+
+    IEnumerator beikong(int time)
+    {
+        beikongzhi = true;
+        for (int i = 0; i < time; i ++)
+            yield return new WaitForFixedUpdate();
+        beikongzhi = false;
     }
 
     public IEnumerator Hidding(int disHideTime)
