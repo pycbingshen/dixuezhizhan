@@ -42,10 +42,11 @@ public static class GameJudgement
                 {
                     kill = GeneralData.killnum[j];
                     die = GeneralData.diednum[j];
+                    Debug.Log("玩家"+j+" 击杀"+kill+" 死亡"+die);
                 }
             }
             item.Find("killnum").GetComponent<UILabel>().text = kill.ToString();
-            item.Find("die").GetComponent<UILabel>().text = die.ToString();
+            item.Find("diednum").GetComponent<UILabel>().text = die.ToString();
         }
 
         Debug.Log("Game End!!!Game End!!!Game End!!!Game End!!!Game End!!!Game End!!!");
