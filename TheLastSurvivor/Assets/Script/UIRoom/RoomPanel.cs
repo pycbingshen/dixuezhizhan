@@ -104,8 +104,10 @@ public class RoomPanel : MonoBehaviour {
                 GeneralData.TeamId[i+1]=gameMess.room_info.team_id[i];
                 if(GeneralData.myName==GeneralData.PlayerName[i+1]){
                     GeneralData.myID=gameMess.room_info.player_id[i];
+                    GeneralData.myTeamId = GeneralData.TeamId[i + 1];
                 }
-            }else{
+            }
+            else{
                 player.gameObject.SetActive(false);
             }
         }

@@ -77,10 +77,15 @@ public class Info : MonoBehaviour {
         if (killNum[killId] >= 8) { qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 已经超神了！"; audioId = 18; }
 
         if (conKillNum[killId] == 0) { qInfo[rearPlus()] = info; }
-        if (conKillNum[killId] == 1) { qInfo[rearPlus()] = info + " ，完成双杀！"; audioId = 2; }
-        if (conKillNum[killId] == 2) { qInfo[rearPlus()] = info + " ，完成三杀！"; audioId = 3; }
-        if (conKillNum[killId] == 3) { qInfo[rearPlus()] = info + " ，完成四杀！";audioId = 4; }
-        if (conKillNum[killId] == 4) { qInfo[rearPlus()] = info + " ，完成五杀！";audioId = 5; }
+        if (conKillNum[killId] == 1 && GeneralData.TeamId[killId] == GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成双杀！"; audioId = 2; }
+        if (conKillNum[killId] == 2 && GeneralData.TeamId[killId] == GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成三杀！"; audioId = 3; }
+        if (conKillNum[killId] == 3 && GeneralData.TeamId[killId] == GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成四杀！";audioId = 4; }
+        if (conKillNum[killId] == 4 && GeneralData.TeamId[killId] == GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成五杀！";audioId = 5; }
+
+        if (conKillNum[killId] == 1 && GeneralData.TeamId[killId] != GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成双杀！"; audioId = 6; }
+        if (conKillNum[killId] == 2 && GeneralData.TeamId[killId] != GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成三杀！"; audioId = 7; }
+        if (conKillNum[killId] == 3 && GeneralData.TeamId[killId] != GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成四杀！"; audioId = 8; }
+        if (conKillNum[killId] == 4 && GeneralData.TeamId[killId] != GeneralData.myTeamId) { qInfo[rearPlus()] = info + " ，完成五杀！"; audioId = 9; }
 
         if (killNum[dieId] >= 3) { qInfo[rearPlus()] = GeneralData.PlayerName[killId] + " 终结 "+ GeneralData.PlayerName[dieId]; audioId = 10; }
 

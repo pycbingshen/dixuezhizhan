@@ -4,7 +4,7 @@ using System.Collections;
 public class RankList : MonoBehaviour
 {
     private UIPanel panel;
-    private UILabel[] nameItem=new UILabel[11];
+    [HideInInspector][System.NonSerialized]public UILabel[] nameItem=new UILabel[11];
     private UILabel[] levelItem=new UILabel[11];
     private Transform playername,level;
     private UILabel target;
@@ -13,6 +13,7 @@ public class RankList : MonoBehaviour
     [HideInInspector][System.NonSerialized]public int[] num = new int[11];
     [HideInInspector][System.NonSerialized]public int team2num=0;
     private Info info;
+
     void Awake(){
         panel = gameObject.transform.Find("Header/Panel").GetComponent<UIPanel>();
         border = panel.transform.FindChild("Border").GetComponent<UISprite>();
@@ -139,6 +140,8 @@ public class RankList : MonoBehaviour
 	
     public void Kill(int killId,int dieId){
         info.AddInfo(killId, dieId);
+        GeneralData.killnum[killId]++;
+        GeneralData.diednum[dieId]++;
         if (GeneralData.gameModeNum == 1)
         {
             if (GeneralData.teamModeNum == 2)

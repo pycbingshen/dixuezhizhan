@@ -9,6 +9,7 @@ public static class GameJudgement
 
     static public void GameEnd(bool win)
     {
+        RankList ranklist =GameObject.Find("UI Root/RankList").GetComponent<RankList>();
         GameObject.Find("Controller").GetComponent<PlayerInput>().CanControll = false;
         GameObject root = GameObject.Find("UI Root");
         root.transform.Find("GameEnd").gameObject.SetActive(true);
@@ -16,6 +17,36 @@ public static class GameJudgement
             root.transform.Find("GameEnd/win").gameObject.SetActive(true);
         else
             root.transform.Find("GameEnd/lose").gameObject.SetActive(true);
+
+        int num = GeneralData.PlayerNum;
+        if (GeneralData.teamModeNum == 2) num+=2;
+        for (int i = 1; i <= 10; i++)
+        {
+            Transform item=root.transform.Find("List/item" + i);
+            if(i<= GeneralData.teamModeNum)
+            {
+                item.gameObject.SetActive(true);
+            }
+            else
+            {
+                item.gameObject.SetActive(false);
+                continue;
+            }
+
+            item.Find("nickname").GetComponent<UILabel>().text = ranklist.nameItem[i].text;
+            if(ranklist.nameItem[i].text=="队伍1"|| ranklist.nameItem[i].text == "队伍2")continue;
+            int kill=-1, die=-1;
+            for(int j=1; j <= 8; j++)
+            {
+                if (ranklist.playerIdToRankID[j] == i)
+                {
+                    kill = GeneralData.killnum[j];
+                    die = GeneralData.diednum[j];
+                }
+            }
+            item.Find("killnum").GetComponent<UILabel>().text = kill.ToString();
+            item.Find("die").GetComponent<UILabel>().text = die.ToString();
+        }
 
         Debug.Log("Game End!!!Game End!!!Game End!!!Game End!!!Game End!!!Game End!!!");
     }

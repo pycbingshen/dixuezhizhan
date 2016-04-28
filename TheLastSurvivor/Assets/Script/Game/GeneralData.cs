@@ -26,6 +26,9 @@ public static class GeneralData
     static public int gameModeNum,teamModeNum;
     static public int gameOption;
     static public int roomId;
+    
+    static public int[] killnum = new int[9];
+    static public int[] diednum = new int[9];
 
     static public void LoadSkillList()
     {
@@ -75,6 +78,12 @@ public static class GeneralData
         SpawnPos [13] = new Vector3(45, 5f, 5);
         SpawnPos [14] = new Vector3(37, 5f, 18);
         SpawnPos [15] = new Vector3(23, 5f, 18);
+
+        for(int i=0; i <= 10; i++)
+        {
+            killnum[i] = 0;
+            diednum[i] = 0;
+        }
     }
 
     static public Vector3 WorldPosition2UIPosition(Vector3 pos)

@@ -17,7 +17,7 @@ public class LoginPanel : MonoBehaviour {
         block = GameObject.Find("UI Root").transform.Find("Block").GetComponent<UIPanel>();
         tip = GameObject.Find("UI Root").transform.Find("Panel/Tip").GetComponent<Tip>();
         
-        print("AmyName:" + GeneralData.myName);
+        //print("AmyName:" + GeneralData.myName);
     }
 
     void Start(){
