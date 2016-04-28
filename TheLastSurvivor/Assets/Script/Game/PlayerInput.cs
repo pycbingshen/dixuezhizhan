@@ -7,6 +7,7 @@ public class PlayerInput : MonoBehaviour
 {
 
     [HideInInspector][System.NonSerialized] public bool CanControll;
+    [HideInInspector][System.NonSerialized] public int moveNum;
     private GameObject _thumb;
     private TweenAlpha _tween;
 
@@ -158,7 +159,7 @@ public class PlayerInput : MonoBehaviour
         }
 
         float angel = CalculateAngle(pos);
-        int moveNum = (int)(angel / 22.5f);
+        moveNum = (int)(angel / 22.5f);
         if (Mathf.Abs(angel - 22.5f * moveNum) > Mathf.Abs(angel - 22.5f * (moveNum + 1)))
             moveNum = (moveNum + 1) % 16;
         if (Vector3.SqrMagnitude(pos) < 0.1f)

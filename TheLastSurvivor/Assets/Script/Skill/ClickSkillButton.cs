@@ -36,7 +36,12 @@ public class ClickSkillButton : ButtonBase
                 RaycastHit hit;
                 Vector3 fwd, pos;
                 Transform ts = GameObject.Find("Player/" + GeneralData.myID.ToString()).transform;
-                float angel = (-ts.eulerAngles.y + 90) * Mathf.Deg2Rad;
+                float angel;
+                int moveNum = GameObject.Find("Controller").GetComponent<PlayerInput>().moveNum;
+                if( moveNum == -1)
+                    angel = (-ts.eulerAngles.y + 90) * Mathf.Deg2Rad;
+                else
+                    angel = (moveNum * 22.5f) * Mathf.Deg2Rad;
                 fwd = new Vector3(Mathf.Cos(angel), 0, Mathf.Sin(angel));
                 if(Physics.Raycast(ts.position, fwd, out hit, 12, 1 << LayerMask.NameToLayer("Border")))
                 {
