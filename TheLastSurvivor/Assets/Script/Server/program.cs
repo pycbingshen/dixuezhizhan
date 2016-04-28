@@ -6,7 +6,7 @@ using client;
 using System.Threading;
 using proto_islandsurvival;
 using UnityEngine;
-//using UnityEditor;
+using UnityEditor;
 using System.Collections;
 
 namespace client
@@ -14,7 +14,7 @@ namespace client
     public class program : MonoBehaviour
     {
         const int PORT = 20000;
-        const string IPADDRESS = "115.29.39.169";
+        const string IPADDRESS = "10.0.128.147";
         static public RoundRobinQueue RecvQueue = new RoundRobinQueue();
         static public RoundRobinQueue SendQueue = new RoundRobinQueue();
         static Thread recvthread;
@@ -24,7 +24,7 @@ namespace client
         {
             print("programStart");
             DontDestroyOnLoad(gameObject);
-            //EditorApplication.playmodeStateChanged += EditorCallBack;
+            EditorApplication.playmodeStateChanged += EditorCallBack;
         }
 
         public static void StartConnect()
@@ -49,7 +49,7 @@ namespace client
 
         public void EditorCallBack()
         {
-            //if (!EditorApplication.isPlaying && !EditorApplication.isPaused)
+            if (!EditorApplication.isPlaying && !EditorApplication.isPaused)
             {
                 if (TcpSocket.Instance() != null)
                 {

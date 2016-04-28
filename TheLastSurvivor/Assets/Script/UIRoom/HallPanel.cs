@@ -133,7 +133,7 @@ public class HallPanel : MonoBehaviour {
         {   
             SCPullAllRoomInfo gameMess = (SCPullAllRoomInfo)mess.m_proto;
             selectRoom.gameObject.SetActive(false);
-            for (int i=0;i<3;i++){
+            for (int i=0;i<7;i++){
                 Transform room=roomList.Find("Room"+(i+1));
                 if(i<gameMess.rooms.Count){
                     room.Find("RoomName").GetComponent<UILabel>().text="房间"+gameMess.rooms[i].id;
