@@ -14,7 +14,7 @@ namespace client
     public class program : MonoBehaviour
     {
         const int PORT = 20000;
-        const string IPADDRESS = "10.0.128.147";
+        const string IPADDRESS = "115.29.39.169";
         static public RoundRobinQueue RecvQueue = new RoundRobinQueue();
         static public RoundRobinQueue SendQueue = new RoundRobinQueue();
         static Thread recvthread;
@@ -177,13 +177,15 @@ namespace client
             MessageRegister.Instance().Register(0x0017, typeof(SCFrameMess));
             MessageRegister.Instance().Register(0x0018, typeof(CSMove));
             MessageRegister.Instance().Register(0x0019, typeof(SCMove));
-            MessageRegister.Instance().Register(0x001a, typeof(CSGamePause));
-            MessageRegister.Instance().Register(0x001b, typeof(SCGamePause));
-            MessageRegister.Instance().Register(0x001c, typeof(CSSkill));
-            MessageRegister.Instance().Register(0x001d, typeof(SCSkill));
-            MessageRegister.Instance().Register(0x001e, typeof(CSHeartbeat));
-            MessageRegister.Instance().Register(0x001f, typeof(CSGameEnd));
-            MessageRegister.Instance().Register(0x0020, typeof(SCGameEnd));
+            MessageRegister.Instance().Register(0x001a, typeof(CSKill));
+            MessageRegister.Instance().Register(0x001b, typeof(SCKill));
+            MessageRegister.Instance().Register(0x001c, typeof(CSGamePause));
+            MessageRegister.Instance().Register(0x001d, typeof(SCGamePause));
+            MessageRegister.Instance().Register(0x001e, typeof(CSSkill));
+            MessageRegister.Instance().Register(0x001f, typeof(SCSkill));
+            MessageRegister.Instance().Register(0x0020, typeof(CSHeartbeat));
+            MessageRegister.Instance().Register(0x0021, typeof(CSGameEnd));
+            MessageRegister.Instance().Register(0x0022, typeof(SCGameEnd));
 
 
 
