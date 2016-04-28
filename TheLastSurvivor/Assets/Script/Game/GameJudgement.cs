@@ -54,8 +54,10 @@ public static class GameJudgement
                     int val = die;
                     if (die > 40) val = 40;
                     score = kill * 1.5f *(1- val*0.02f);
+                    score=(int)(score * 10) / 10;
                 }
             }
+            
             item.Find("killnum").GetComponent<UILabel>().text = kill.ToString();
             item.Find("diednum").GetComponent<UILabel>().text = die.ToString();
             item.Find("score").GetComponent<UILabel>().text = score.ToString();
