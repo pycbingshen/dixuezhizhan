@@ -79,7 +79,7 @@ public static class GeneralData
         SpawnPos [14] = new Vector3(37, 5f, 18);
         SpawnPos [15] = new Vector3(23, 5f, 18);
 
-        for(int i=0; i <= 10; i++)
+        for(int i=0; i <= 8; i++)
         {
             killnum[i] = 0;
             diednum[i] = 0;
