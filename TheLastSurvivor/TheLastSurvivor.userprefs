@@ -1,22 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MainMenu/LoadRoom.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Game/Controller.cs">
     <Files>
       <File FileName="Assets/Test2.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/Hero.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/GameJudgement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Game/XUnit.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/SmallTools/RankList.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Game/GeneralData.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Game/Controller.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Game/XUnit.cs" Line="64" Column="10" />
       <File FileName="Assets/Script/Game/PlayerSpawn.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/PlayerInput.cs" Line="1" Column="1" />
       <File FileName="Assets/Script/Game/Skill.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Skill/SkillList.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/SmallTools/Reward.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/SmallTools/NameManage.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Skill/ButtonBase.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/MainMenu/LoadRoom.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Server/program.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Skill/ClickSkillButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Server/network/proto_islandsurvival.cs" Line="22" Column="26" />
+      <File FileName="Assets/Script/Game/Controller.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

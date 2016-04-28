@@ -517,6 +517,54 @@ namespace proto_islandsurvival
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
   }
   
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"CSKill")]
+  public partial class CSKill : global::ProtoBuf.IExtensible
+  {
+    public CSKill() {}
+    
+    private int _killer;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"killer", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int killer
+    {
+      get { return _killer; }
+      set { _killer = value; }
+    }
+    private int _bekilled;
+    [global::ProtoBuf.ProtoMember(2, IsRequired = true, Name=@"bekilled", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int bekilled
+    {
+      get { return _bekilled; }
+      set { _bekilled = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
+  [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"SCKill")]
+  public partial class SCKill : global::ProtoBuf.IExtensible
+  {
+    public SCKill() {}
+    
+    private int _killer;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"killer", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int killer
+    {
+      get { return _killer; }
+      set { _killer = value; }
+    }
+    private int _bekilled;
+    [global::ProtoBuf.ProtoMember(2, IsRequired = true, Name=@"bekilled", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public int bekilled
+    {
+      get { return _bekilled; }
+      set { _bekilled = value; }
+    }
+    private global::ProtoBuf.IExtension extensionObject;
+    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+      { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
+  }
+  
   [global::System.Serializable, global::ProtoBuf.ProtoContract(Name=@"CSGamePause")]
   public partial class CSGamePause : global::ProtoBuf.IExtensible
   {

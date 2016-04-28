@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using client;
+using proto_islandsurvival;
 public class XUnit : MonoBehaviour 
 {
     
@@ -50,6 +52,21 @@ public class XUnit : MonoBehaviour
         UISlider hp = attacker.GetComponent<XUnit>().HP;
         if (hp == null || _currHP <= 0)
             return;
+        if (attacker.name != GeneralData.myID.ToString())
+            return;
+
+        CMessage mess = new CMessage();
+        mess.m_head.m_framenum = Controller.CurrentFrameNum;
+        mess.m_head.m_message_id = MessageRegister.Instance().GetID(typeof(CSKill));
+        CSKill proto = new CSKill();
+        proto.killer = int.Parse(attacker.name);
+        proto.bekilled = int.Parse(gameObject.name);
+        mess.m_proto = proto;
+        program.SendQueue.push(mess);
+    }
+
+    public void BeKillFor(GameObject attacker, int valueOfHurt)
+    {
         _currHP -= valueOfHurt;
         HP.value = _currHP * 1f / _maxHP;
         //HP.gameObject.GetComponent<HPFollow>().AppearHurtNum(valueOfHurt);
@@ -58,51 +75,8 @@ public class XUnit : MonoBehaviour
             Debug.Log("error ? : " + GeneralData.PlayerName[int.Parse(attacker.name)] + " kill " + GeneralData.PlayerName[int.Parse(gameObject.name)]);
             Debug.Log(attacker.transform.position.ToString("f8") + "  =weizhi=  " + gameObject.transform.position.ToString("f8"));
             GameObject.Find("UI Root/RankList").GetComponent<RankList>().Kill(int.Parse(attacker.name), int.Parse(gameObject.name));
-
+            
             GameJudgement.DealWith();
-//            if(GeneralData.gameModeNum == 1)
-//            {
-//                RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
-//                if(GeneralData.teamModeNum == 1)
-//                {
-//                    if(list.num[list.playerIdToRankID[int.Parse(attacker.name)]] >= GeneralData.gameOption)
-//                    {
-//                        GameJudgement.GameEnd();
-//                    }
-//                }
-//                else
-//                {
-//                    if(list.num[1] >= GeneralData.gameOption || list.num[list.team2num] >= GeneralData.gameOption)
-//                    {
-//                        GameJudgement.GameEnd();
-//                    }
-//                }
-//            }
-//
-//            if(GeneralData.gameModeNum == 2)
-//            {
-//                RankList list = GameObject.Find("UI Root/RankList").GetComponent<RankList>();
-//                if(list.num[list.playerIdToRankID[int.Parse(gameObject.name)]] == 0)
-//                {
-//                    CanRevive = false;
-//                    if(GeneralData.teamModeNum == 1)
-//                    {
-//                        GeneralData.AlivePlayerNum[1] --;
-//                        if(GeneralData.AlivePlayerNum[1] <= 1)
-//                        {
-//                            GameJudgement.GameEnd();
-//                        }
-//                    }
-//                    else
-//                    {
-//                        GeneralData.AlivePlayerNum[TeamID]--;
-//                        if(GeneralData.AlivePlayerNum[TeamID] <= 1)
-//                        {
-//                            GameJudgement.GameEnd();
-//                        }
-//                    }
-//                }
-//            }
             attacker.GetComponent<XUnit>().GetExp(_expWhenIsDie);
             Dying();
         }

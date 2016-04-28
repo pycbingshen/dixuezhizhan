@@ -305,6 +305,18 @@ public class Controller: MonoBehaviour
             return;
         }
 
+        if (mess.m_proto is SCKill)
+        {
+            SCKill gameMess = (SCKill)mess.m_proto;
+            //Debug.Log(gameMess.player_id + " wanjiaxuanzelezhiye " + gameMess.role_id);
+            Debug.Log(gameMess.killer +" kill " + gameMess.bekilled);
+            GameObject go3 = GameObject.Find("Player/" + gameMess.killer.ToString());
+            GameObject go4 = GameObject.Find("Player/" + gameMess.bekilled.ToString());
+            go4.GetComponent<XUnit>().BeKillFor(go3, 1);
+//            GameObject.Find("Player").GetComponent<PlayerSpawn>().Spawn(gameMess.player_id, gameMess.role_id);
+            return;
+        }
+
 
     }
 
