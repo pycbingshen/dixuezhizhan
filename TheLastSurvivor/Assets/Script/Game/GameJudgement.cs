@@ -6,9 +6,11 @@ public static class GameJudgement
     static public int KillTargetNum;
     static public int AlivePlayerNum;
     static public int[] FlagGetNum = new int[2];
-
+    static private bool flag = false;
     static public void GameEnd(bool win)
     {
+        if (flag) return;
+        flag = true;
         RankList ranklist =GameObject.Find("UI Root/RankList").GetComponent<RankList>();
         GameObject.Find("Controller").GetComponent<PlayerInput>().CanControll = false;
         GameObject root = GameObject.Find("UI Root");
