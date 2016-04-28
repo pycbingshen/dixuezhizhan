@@ -9,16 +9,18 @@ public class PlayerSpawn: MonoBehaviour {
 	// Use this for initialization
     public void Spawn(int index, int zhiye)
     {
+        int spawnIndex = GeneralData.XRandom(0, 0, 15);
         Vector3 spawnPos;
         while (true)
         {
-            spawnPos = GeneralData.SpawnPos[ GeneralData.XRandom(0,0,9) ];
+            spawnPos = GeneralData.SpawnPos[ spawnIndex ];
             int i;
             for( i = 0 ; i < transform.childCount ; i++)
                 if( Vector3.Distance(transform.GetChild(i).position , spawnPos) < 5)
                     break;
             if( i >= transform.childCount)
                 break;
+            spawnIndex = (spawnIndex + 1 ) % 15;
         }
         //spawnPos.y = 10;
 
@@ -116,10 +118,21 @@ public class PlayerSpawn: MonoBehaviour {
 
     public void Resume(int index, int spawnIndex)
     {
-        Vector3 Pos = GeneralData.SpawnPos[ spawnIndex ];
+        Vector3 spawnPos;
+        while (true)
+        {
+            spawnPos = GeneralData.SpawnPos[ spawnIndex ];
+            int i;
+            for( i = 0 ; i < transform.childCount ; i++)
+                if( Vector3.Distance(transform.GetChild(i).position , spawnPos) < 5)
+                    break;
+            if( i >= transform.childCount)
+                break;
+            spawnIndex = (spawnIndex + 1 ) % 15;
+        }
 
         GameObject go = GameObject.Find("Player/" + index.ToString());
-        go.transform.position = Pos;
+        go.transform.position = spawnPos;
         Hero hero = go.GetComponent<Hero>();
         hero.animator.SetBool("Death", false);
         hero.HP.gameObject.SetActive(true);
