@@ -90,10 +90,10 @@ public static class GameJudgement
                 }
             }
 
-            Debug.Log("xxx"+team2num);
+            Debug.Log("xxx"+ list.team2num);
             if(GeneralData.teamModeNum == 2)
             {
-                Debug.Log("xxx" + team2num+" "+ GeneralData.gameOption+" "+ GeneralData.myTeamId);
+                Debug.Log("xxx" + list.team2num + " "+ GeneralData.gameOption+" "+ GeneralData.myTeamId);
                 if (list.num[1] >= GeneralData.gameOption || list.num[list.team2num] >= GeneralData.gameOption)
                 {
                     if(list.num[1] >= GeneralData.gameOption)

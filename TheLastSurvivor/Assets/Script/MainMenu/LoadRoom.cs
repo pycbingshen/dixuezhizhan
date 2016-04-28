@@ -34,7 +34,7 @@ public class LoadRoom : MonoBehaviour
                 if (mess.m_proto is SCGameEnd)
                 {
                     //SCGameEnd gameMess = (SCGameEnd)mess.m_proto;
-                    GameJudgement.flag = true;
+                    GameJudgement.flag = false;
                     program.RecvQueue.init();
                     Application.LoadLevel("Room");
                     return;
