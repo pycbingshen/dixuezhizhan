@@ -181,6 +181,7 @@ public class RankList : MonoBehaviour
 
     public void Refresh(int rankid, int val)
     {
+        print(rankid+" "+val);
         num[rankid] += val;
         levelItem[rankid].text = num[rankid].ToString();
 

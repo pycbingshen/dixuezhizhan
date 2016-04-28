@@ -273,7 +273,7 @@ public class Controller: MonoBehaviour
                     {
                         int teamId=GeneralData.TeamId[gameMess.player];
                         if (teamId == 2) teamId = list.team2num;
-                        list.Refresh(teamId, -list.num[listID]);
+                        list.Refresh(teamId, -list.num[teamId]);
                     }
                 }
                 GameJudgement.DealWith();
